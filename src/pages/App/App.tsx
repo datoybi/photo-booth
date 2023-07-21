@@ -1,7 +1,9 @@
 import normalize from "emotion-normalize";
 import { css, Global } from "@emotion/react";
+import { Routes } from "./Routes";
+import { PageLayout } from "../PageLayout";
 
-function App() {
+export default function App() {
   return (
     <>
       <Global
@@ -15,8 +17,9 @@ function App() {
         `}
       />
       <p>hello world!</p>
+      <PageLayout>
+        <Routes />
+      </PageLayout>
     </>
   );
 }
-
-export default App;
