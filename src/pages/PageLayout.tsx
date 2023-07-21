@@ -1,7 +1,6 @@
-import { css } from "@emotion/react";
-import { ReactNode } from "react";
+import { css } from '@emotion/react';
+import { ReactNode } from 'react';
 export function PageLayout({ children }: { children: ReactNode }) {
-  console.log("pagelayout");
   return (
     <div
       css={css`
