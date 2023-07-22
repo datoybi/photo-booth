@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './pages/App/App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { worker } from './mocks/browser';
+import './index.css';
 
 worker.start({ onUnhandledRequest: 'bypass' });
 

@@ -1,7 +1,8 @@
-import normalize from "emotion-normalize";
-import { css, Global } from "@emotion/react";
-import { Routes } from "./Routes";
-import { PageLayout } from "../PageLayout";
+import normalize from 'emotion-normalize';
+import { css, Global } from '@emotion/react';
+import { Routes } from './Routes';
+import { PageLayout } from '../PageLayout';
+import Button from '@mui/material/Button';
 
 export default function App() {
   return (
@@ -16,7 +17,6 @@ export default function App() {
           }
         `}
       />
-      <p>hello world!</p>
       <PageLayout>
         <Routes />
       </PageLayout>
