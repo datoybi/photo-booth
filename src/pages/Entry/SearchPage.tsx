@@ -4,6 +4,7 @@ import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Paper from '@mui/material/Paper';
+import PhotoList from './PhotoList';
 
 export default function SearchPage() {
   return (
@@ -23,7 +24,7 @@ export default function SearchPage() {
           </IconButton>
         </Paper>
         <Paper sx={{ mt: '20px', height: '1000px' }} variant="outlined">
-          <p>dd</p>
+          <PhotoList />
         </Paper>
       </Paper>
     </CustomContainer>
