@@ -4,6 +4,7 @@ import normalize from 'emotion-normalize';
 import { css, Global } from '@emotion/react';
 import { Routes } from './Routes';
 import { PageLayout } from '../PageLayout';
+import { API_SECRET_KEY } from '../../constants/constant';
 
 export default function App() {
   const [imageData, setImageData] = useState([]);
@@ -13,7 +14,8 @@ export default function App() {
     const fetchTodo = async () => {
       const data = await axios
         .get('http://api.unsplash.com/photos/random', {
-          params: { client_id: import.meta.env.VITE_UNSPLASH_ID, count: 10 },
+          params: { client_id: API_SECRET_KEY, count: 10 },
+          // params: { client_id: import.meta.env.VITE_UNSPLASH_ID, count: 10 },
         })
         .then(res => res.data);
       console.log(data);
