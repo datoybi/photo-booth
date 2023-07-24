@@ -34,7 +34,7 @@ const Header = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
 
   & > h1 {
     font-size: 2rem;
